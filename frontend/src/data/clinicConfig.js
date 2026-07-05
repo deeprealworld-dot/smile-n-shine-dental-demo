@@ -162,7 +162,7 @@ services: [
     {
       icon: "MapPin",
       title: "Convenient Location",
-      description: "Located on Thakur Village, Kandivali East \u2014 easily accessible by metro, bus, and auto-rickshaw.",
+      description: "Located in Thakur Village, Kandivali East \u2014 easily accessible by metro, bus, and auto-rickshaw.",
     },
     {
       icon: "IndianRupee",
@@ -198,7 +198,7 @@ services: [
     {
       name: "Sunita Deshmukh",
       rating: 5,
-      review: "The clinic is clean, well-maintained, and the staff is incredibly courteous. I never have to wait more than 10 minutes. Best clinic in Andheri West!",
+      review: "The clinic is clean, well-maintained, and the staff is incredibly courteous. I never have to wait more than 10 minutes. Best clinic in Kandivali East!",
       initials: "SD",
     },
     {
