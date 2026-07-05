@@ -255,15 +255,16 @@ services: [
 
   // ========== APPOINTMENT SERVICES ==========
   appointmentServices: [
-    "General Consultation",
-    "Diabetes Care",
-    "Blood Pressure Management",
-    "Health Checkup",
-    "Vaccination",
-    "Preventive Care",
-    "Senior Citizen Care",
-    "Other",
-  ],
+   "Dental Consultation",
+   "Dental Hygiene",
+   "Teeth Whitening",
+   "Root Canal Therapy",
+   "Dental Crowns & Bridges",
+   "Tooth Pain Treatment",
+   "Custom Sport Guards",
+   "Preventive Dental Care",
+   "Other",
+   ],
 
   // ========== TIME SLOTS ==========
   timeSlots: [
