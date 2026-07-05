@@ -82,7 +82,7 @@ const clinicConfig = {
   // ========== DOCTOR ==========
   doctor: {
     name: "Dr. Kunal Mehta",
-    qualification: "B.D.S"
+    qualification: "B.D.S",
     specializations: ["Smile Design", "Implant Surgery", "Cosmetic Dentistry"],
     experience: "14+ Years",
     image: "/images/doctor.jpg",
