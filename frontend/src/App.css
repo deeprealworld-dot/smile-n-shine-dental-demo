@@ -1,0 +1,36 @@
+/* Mumbai Care Clinic - Global Styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offset for fixed header on anchor scroll */
+[id] {
+  scroll-margin-top: 80px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(20, 184, 166, 0.2);
+  color: #0F4C81;
+}
+
+/* Image loading placeholder */
+img {
+  background-color: #F1F5F9;
+}

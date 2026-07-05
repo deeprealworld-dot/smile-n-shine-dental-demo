@@ -1,0 +1,144 @@
+{
+  "project_name": "Mumbai Care Clinic Landing Page",
+  "theme": "Light Theme",
+  "archetype": "Archetype 1: Organic & Earthy (Adapted for premium medical trust)",
+  "design_philosophy": "A premium, accessible, and high-trust healthcare experience. Focuses on clarity, empathy, and speed to conversion. Uses generous whitespace, high-contrast typography, and soft curves to reduce clinical anxiety while maintaining authority.",
+  "colors": {
+    "primary": "#0F4C81",
+    "primary_hover": "#0c3c66",
+    "secondary": "#14B8A6",
+    "secondary_hover": "#0f9788",
+    "background": "#FFFFFF",
+    "surface_light": "#F8FAFC",
+    "surface_teal_tint": "#F0FDF4",
+    "text_primary": "#1F2937",
+    "text_secondary": "#4B5563",
+    "border": "#E5E7EB"
+  },
+  "typography": {
+    "headings_font": "Outfit",
+    "body_font": "Manrope",
+    "scales": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#0F4C81] leading-[1.1]",
+      "h2": "text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#0F4C81] leading-[1.2]",
+      "h3": "text-xl sm:text-2xl font-semibold text-[#1F2937]",
+      "h4": "text-lg font-semibold text-[#1F2937]",
+      "body": "text-base text-[#4B5563] leading-relaxed",
+      "overline": "text-sm font-bold tracking-[0.2em] text-[#14B8A6] uppercase"
+    }
+  },
+  "spacing_and_layout": {
+    "section_padding": "py-20 md:py-32",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "grid_gap": "gap-8 lg:gap-12",
+    "card_padding": "p-8 md:p-10"
+  },
+  "borders_and_shadows": {
+    "card_radius": "rounded-2xl",
+    "button_radius": "rounded-full",
+    "image_radius": "rounded-3xl",
+    "shadow_sm": "shadow-sm",
+    "shadow_md": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+    "shadow_hover": "shadow-[0_20px_40px_rgb(0,0,0,0.08)]"
+  },
+  "components": {
+    "header": {
+      "style": "Crystal Glassmorphism",
+      "classes": "fixed top-0 w-full z-50 backdrop-blur-xl bg-white/90 border-b border-slate-100 transition-all duration-300",
+      "features": ["Logo", "Navigation Links", "Click-to-call", "Book Appointment CTA (#14B8A6)"]
+    },
+    "hero_section": {
+      "layout": "Split 50/50 layout. Left side text content, right side hero image with floating trust badge (e.g., '15+ Years Experience').",
+      "buttons": ["Primary: Book Appointment (#14B8A6)", "Secondary: Outline/Ghost button for View Services"]
+    },
+    "trust_badges": {
+      "layout": "Horizontal banner below hero, subtle background (#F8FAFC), 4-5 key metrics/badges using lucide-react icons (e.g., Award, ShieldCheck, Users, Clock)."
+    },
+    "about_clinic": {
+      "layout": "Image left (rounded-3xl), Content right. Highlight 'Quality Healthcare for Every Family' in Andheri West."
+    },
+    "services_grid": {
+      "layout": "CSS Grid, 3 columns (grid-cols-1 md:grid-cols-2 lg:grid-cols-3).",
+      "card_style": "Flat background, 1px border (#E5E7EB), icon in circle with teal tint, hover lift (-translate-y-2) and shadow-hover."
+    },
+    "doctor_profile": {
+      "layout": "Card layout. High-quality portrait image. Details below. Social links/credentials. Use 'Consult Now' button."
+    },
+    "appointment_form": {
+      "style": "Use Shadcn UI components (Input, Select, Button). Layout in a bordered card.",
+      "behavior": "Frontend-only validation, triggers Shadcn Dialog (Confirmation Popup) on submit."
+    },
+    "why_choose_us": {
+      "layout": "Bento Grid Mode A (Tetris Grid). Mix 2-col and 1-col spans for visual tension. Highlight tech, care, environment."
+    },
+    "patient_testimonials": {
+      "layout": "Carousel (using Framer Motion or Shadcn Carousel). Soft teal-tinted background for the section."
+    },
+    "gallery_masonry": {
+      "layout": "CSS Columns or Masonry grid. Images zoom on hover.",
+      "behavior": "Clicking image opens Framer Motion Lightbox or Shadcn Dialog showing full image."
+    },
+    "contact_section": {
+      "layout": "2 Columns. Left: Address, Email, Phone, Timings. Right: Google Maps embedded iframe for 'Andheri West, Mumbai'."
+    },
+    "footer": {
+      "style": "Dark background (#0F4C81), white text.",
+      "layout": "4 Columns: Brand info, Quick Links, Services, Contact. Generous padding (py-20)."
+    },
+    "floating_whatsapp": {
+      "style": "Fixed bottom-right, z-50, green background (#25D366), lucide-react MessageCircle icon, pulsing animation."
+    }
+  },
+  "motion_and_interactions": {
+    "page_load": "Staggered fade-up (Framer Motion) for Hero section elements.",
+    "scroll": "WhileInView animations for sections (opacity 0 to 1, y: 20 to 0).",
+    "hover": "Buttons have scale-105 effect, cards elevate with shadow.",
+    "accessibility": "Respect prefers-reduced-motion in Framer Motion (use useReducedMotion hook)."
+  },
+  "image_assets": {
+    "hero": [
+      {
+        "url": "https://images.unsplash.com/photo-1782397132123-0166b524d6bc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBtZWRpY2FsJTIwY2xpbmljJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzgyNzQxNjU2fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Modern medical clinic interior for Hero background/image"
+      }
+    ],
+    "about": [
+      {
+        "url": "https://images.unsplash.com/photo-1762625570087-6d98fca29531?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBtZWRpY2FsJTIwY2xpbmljJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzgyNzQxNjU2fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Waiting room / Reception"
+      }
+    ],
+    "doctor": [
+      {
+        "url": "https://images.pexels.com/photos/19438563/pexels-photo-19438563.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Confident South Asian male doctor in white coat"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://images.pexels.com/photos/7789603/pexels-photo-7789603.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Contemporary medical office interior"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1710074213379-2a9c2653046a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHwxfHxwYXRpZW50JTIwY2FyZSUyMGhvc3BpdGFsfGVufDB8fHx8MTc4Mjc0MTY1Nnww&ixlib=rb-4.1.0&q=85",
+        "description": "Hospital room patient care"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1633488781325-d36e6818d0c8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHwzfHxwYXRpZW50JTIwY2FyZSUyMGhvc3BpdGFsfGVufDB8fHx8MTc4Mjc0MTY1Nnww&ixlib=rb-4.1.0&q=85",
+        "description": "Patient examined by nurse"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "CRITICAL: All interactive and key informational elements MUST include a 'data-testid' attribute (e.g., data-testid='book-appointment-btn').",
+    "CRITICAL: Create 'src/data/clinicConfig.js' to store ALL text content, service lists, doctor details, and image URLs. Import from this file into the React components.",
+    "Use 'lucide-react' for all icons.",
+    "Use 'framer-motion' for all animations, stagger effects, scroll reveals, and the masonry gallery lightbox.",
+    "Form must be functional frontend-only using Shadcn UI. Show a Shadcn Dialog confirmation upon submission.",
+    "Do not use Inter for headings. Apply 'Outfit' font for headings and 'Manrope' for body. Update tailwind.config.js accordingly.",
+    "Ensure contrast ratios are met. The Deep Blue (#0F4C81) and Teal (#14B8A6) must pop beautifully against the clean white background.",
+    "For the Sticky Nav, ensure it has a z-index of 50 and proper backdrop-blur.",
+    "Ensure the layout is completely mobile-responsive (mobile-first approach).",
+    "The gallery should be implemented as a Masonry layout using Tailwind columns (e.g., columns-1 md:columns-2 lg:columns-3) or an actual masonry library/framer-motion grid."
+  ]
+}

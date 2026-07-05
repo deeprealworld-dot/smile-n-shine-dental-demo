@@ -1,0 +1,60 @@
+{
+  "summary": "Tested scroll navigation (desktop + mobile) after scrollToSection() utility fix. Desktop nav fully working. Mobile Contact section scroll has a positioning bug.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [
+      {
+        "component": "Mobile Nav - Contact scroll",
+        "issue": "Clicking 'Contact' in mobile menu scrolls to scrollY=12780, but #contact section is at offsetTop=14113. Section ends up ~1253px below viewport top (actual top=1332px instead of expected ~80px). Root cause: Gallery section has many lazy-loaded images that shift page height during smooth scroll animation. The scrollToSection() calculates target position at click time, but by the time scroll reaches that position, images have loaded below and pushed Contact section further down.",
+        "selector": "[data-testid='mobile-menu'] a[href='#contact']",
+        "priority": "HIGH"
+      }
+    ],
+    "integration_issues": [],
+    "design_issues": [
+      {
+        "screen": "Mobile Hero",
+        "issues": ["Hero looks good - headline, CTAs, hero image all visible and well-spaced. No issues."]
+      }
+    ]
+  },
+  "test_report_links": ["/app/test_reports/iteration_4.json"],
+  "action_items": [
+    "Fix mobile Contact scroll: lazy-loaded gallery images cause page height to shift during smooth scroll. Fix options: (1) use scrollIntoView after delay, (2) add loading='eager' to gallery images, (3) re-calculate scroll position after images load, (4) use a two-step scroll approach."
+  ],
+  "critical_code_review_comments": [
+    "scroll.js calculates target position via getBoundingClientRect().top + window.scrollY at click time. If lazy-loaded images exist between current position and target section, the page height grows during scroll and the section ends up beyond the calculated target. This affects long-distance mobile scrolls (e.g., top → Contact which passes through the Gallery image grid)."
+  ],
+  "updated_files": [],
+  "success_rate": {
+    "backend": "N/A",
+    "frontend": "83% (10/12 tests pass)"
+  },
+  "test_results": {
+    "desktop_about_scroll": "PASS - section top = 80.0px",
+    "desktop_services_scroll": "PASS - section top = 80.0px",
+    "desktop_doctor_scroll": "PASS - section top = 79.5px",
+    "desktop_gallery_scroll": "PASS - section top = 80.2px",
+    "desktop_contact_scroll": "PASS - section top = 79.7px",
+    "desktop_home_scroll": "PASS - scrollY = 0",
+    "desktop_book_appointment": "PASS - section top = 79.5px",
+    "mobile_services_scroll": "PASS - menu closes, section top = 80.2px",
+    "mobile_doctor_scroll": "PASS - menu closes, section top = 79.7px",
+    "mobile_contact_scroll": "FAIL - section top = 1332.8px (scrollY=12780, expected=14033)",
+    "mobile_hero_layout": "PASS - headline, CTAs, hero image all visible",
+    "mobile_appointment_form": "PASS - 10 form elements accessible"
+  },
+  "seed_data_creation": "",
+  "retest_needed": true,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Scroll utility at src/utils/scroll.js works for desktop and short-distance mobile scrolls. Only mobile Contact (long distance from top, passing through lazy-loaded Gallery images) fails. The issue is content shift during smooth scroll. Desktop Contact scroll works fine because desktop page height doesn't shift as much (different layout). To verify fix: on mobile, open hamburger, click Contact, wait 5s, check getBoundingClientRect().top of #contact element should be ~80px.",
+  "rca_of_issue": {
+    "bug": "Mobile Contact section scroll undershoots by ~1253px",
+    "reproduction": "1. Mobile (390px viewport), 2. Open hamburger menu, 3. Click Contact, 4. Wait 5s, 5. Check #contact getBoundingClientRect().top - shows 1332px instead of ~80px",
+    "root_cause": "scrollToSection() calculates target = el.getBoundingClientRect().top + window.scrollY - 80 at click time. The Gallery section between top and Contact contains many images with lazy loading. As smooth scroll passes through Gallery, images load and increase page height, pushing #contact further down than the pre-calculated target. Desktop is unaffected because Gallery layout differs and fewer images cause height shift.",
+    "mitigation": "Option 1 (recommended): Add loading='eager' to gallery images. Option 2: Use scrollIntoView() instead of window.scrollTo() - browser native scroll accounts for dynamic layout. Option 3: Add event listener for layoutchange and re-scroll."
+  }
+}

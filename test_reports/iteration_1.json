@@ -1,0 +1,65 @@
+{
+  "summary": "Frontend-only testing of Mumbai Care Clinic landing page. All major sections, interactions, and flows tested on desktop (1920x1080) and mobile (390x844).",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [
+      {
+        "component": "MobileMenu (Header.jsx)",
+        "issue": "Duplicate 'Call Now' button appears in mobile menu overlay - one from header nav area and one standalone below Book Appointment button",
+        "selector": "mobile menu overlay",
+        "priority": "LOW"
+      },
+      {
+        "component": "Gallery Lightbox (Gallery.jsx)",
+        "issue": "Section heading 'Take a Virtual Tour' text bleeds through the lightbox backdrop overlay - overlay background appears semi-transparent, the section title text is visible behind the lightbox modal",
+        "selector": "[data-testid='lightbox-close-btn']",
+        "priority": "MEDIUM"
+      }
+    ],
+    "integration_issues": [],
+    "design_issues": [
+      {
+        "screen": "Gallery section - Desktop",
+        "issues": ["Masonry grid layout at bottom of gallery section shows only 1 column with 2 images - may be a CSS columns issue for the last items"]
+      }
+    ]
+  },
+  "test_report_links": ["/app/test_reports/iteration_1.json"],
+  "action_items": [
+    "Fix lightbox backdrop overlay - increase opacity or use a fully opaque backdrop to prevent section heading text from showing through",
+    "Review mobile menu to remove duplicate 'Call Now' button",
+    "Verify gallery masonry CSS columns fill properly on all screen sizes"
+  ],
+  "critical_code_review_comments": [
+    "Gallery.jsx lightbox backdrop likely needs backdrop-filter or higher opacity background to avoid content bleed-through",
+    "Header.jsx mobile menu may be rendering both the header CTAs and a separate floating call button in the same overlay"
+  ],
+  "updated_files": [],
+  "success_rate": {
+    "backend": "N/A",
+    "frontend": "92%"
+  },
+  "seed_data_creation": "",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "All critical flows working: Hero, Trust Badges, About, Services, Doctor, Appointment (form validation + confirmation dialog), Why Choose Us, Testimonials carousel, Health Tips, Gallery with lightbox, Contact with Google Maps, Footer with 4 columns + social links. Sticky header + floating WhatsApp all confirmed. Two minor UI bugs: (1) lightbox text bleed-through, (2) duplicate Call Now in mobile menu.",
+  "passed_tests": [
+    "Page loads successfully with all sections",
+    "Sticky header with logo, nav, Call Now and Book Appointment buttons",
+    "Hero: 'Quality Healthcare for Your Family' headline, CTA buttons",
+    "Trust badges - 4 badges visible",
+    "Services section - 6 service cards",
+    "Appointment form validation (shows errors for empty required fields)",
+    "Appointment form full submission with confirmation dialog",
+    "Testimonials carousel prev/next navigation",
+    "Gallery masonry layout with lightbox (open/close)",
+    "Contact section: address, phone, email, WhatsApp, working hours, Google Maps iframe",
+    "Footer: 4 columns, brand info, Quick Links, Services, Contact, social links",
+    "Floating WhatsApp button",
+    "Mobile: hamburger menu opens with nav links and CTA buttons",
+    "All data-testid attributes verified: sticky-header, floating-whatsapp-btn, appointment-submit-btn, testimonial-prev-btn, testimonial-next-btn, lightbox-close-btn"
+  ]
+}
