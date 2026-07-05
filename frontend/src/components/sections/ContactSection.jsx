@@ -69,7 +69,7 @@ export default function ContactSection() {
 
           <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <div className="rounded-2xl overflow-hidden border border-clinic-border shadow-[0_8px_30px_rgb(0,0,0,0.04)] h-full min-h-[400px]">
-              <iframe src={contact.mapEmbedUrl} width="100%" height="100%" style={{ border: 0, minHeight: 400 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Mumbai Care Clinic Location" data-testid="google-map-embed" />
+              <iframe src={contact.mapEmbedUrl} width="100%" height="100%" style={{ border: 0, minHeight: 400 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Smile N Shine Clinic Location" data-testid="google-map-embed" />
             </div>
           </motion.div>
         </div>

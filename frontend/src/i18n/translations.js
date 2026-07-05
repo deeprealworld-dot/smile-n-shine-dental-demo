@@ -19,7 +19,7 @@ const en = {
   hero: {
     badge: "12+ Years of Excellence",
     headline: "Quality Healthcare for Your Family",
-    subheadline: "Trusted by thousands of families in Andheri West. Experience compassionate, personalized medical care backed by 12+ years of clinical excellence.",
+    subheadline: "Trusted by thousands of families in Kandivali East. Experience compassionate, personalized medical care backed by 12+ years of clinical excellence.",
     ctaPrimary: "Book Appointment",
     emergency: "Emergency",
     happyPatients: "Happy Patients",
@@ -38,14 +38,14 @@ const en = {
   about: {
     overline: "About Us",
     title: "Caring for Mumbai, One Family at a Time",
-    description: "Established in 2012, Mumbai Care Clinic has been a cornerstone of healthcare in Andheri West. We believe that quality medical care should be accessible, affordable, and delivered with genuine compassion.",
+    description: "Established in 2012, Smile N Shine Clinic has been a cornerstone of healthcare in Kandivali East. We believe that quality medical care should be accessible, affordable, and delivered with genuine compassion.",
     missionLabel: "Our Mission",
     mission: "To provide accessible, high-quality healthcare that treats every patient with dignity, respect, and personalized attention.",
     visionLabel: "Our Vision",
     vision: "To be the most trusted neighborhood clinic in Mumbai, known for clinical excellence and compassionate care.",
     yearsOfTrust: "Years of Trust",
     stats: [
-      { value: "12+", label: "Years Experience" },
+      { value: "14+", label: "Years Experience" },
       { value: "5000+", label: "Happy Patients" },
       { value: "15+", label: "Health Services" },
       { value: "98%", label: "Patient Satisfaction" },
@@ -129,7 +129,7 @@ const en = {
     title: "What Sets Us Apart",
     items: [
       { title: "Experienced Medical Team", description: "Our doctors bring decades of combined experience in treating a wide range of health conditions." },
-      { title: "Convenient Location", description: "Located on S.V. Road, Andheri West \u2014 easily accessible by metro, bus, and auto-rickshaw." },
+      { title: "Convenient Location", description: "Located in Thakur Village, Kandivali East \u2014 easily accessible by metro, bus, and auto-rickshaw." },
       { title: "Affordable Consultation", description: "Quality healthcare that doesn't strain your wallet. Transparent pricing with no hidden charges." },
       { title: "Personalized Care", description: "Every patient receives individual attention. We listen, understand, and create tailored treatment plans." },
       { title: "Minimal Waiting Time", description: "We respect your time. Our efficient scheduling ensures you're seen promptly without long waits." },
@@ -142,9 +142,9 @@ const en = {
     title: "What Our Patients Say",
     patient: "Patient",
     items: [
-      { name: "Priya Mehta", initials: "PM", rating: 5, review: "Dr. Sharma has been our family doctor for 5 years. His patience and thoroughness is remarkable. He takes time to explain everything clearly. Highly recommended!" },
-      { name: "Rajesh Patel", initials: "RP", rating: 5, review: "Managing my diabetes was overwhelming until I visited Mumbai Care Clinic. Dr. Sharma's approach to diabetes management has truly transformed my health. My sugar levels are now well controlled." },
-      { name: "Sunita Deshmukh", initials: "SD", rating: 5, review: "The clinic is clean, well-maintained, and the staff is incredibly courteous. I never have to wait more than 10 minutes. Best clinic in Andheri West!" },
+      { name: "Priya Mehta", initials: "PM", rating: 5, review: "Dr. Mehta has been our family doctor for 5 years. His patience and thoroughness is remarkable. He takes time to explain everything clearly. Highly recommended!" },
+      { name: "Rajesh Patel", initials: "RP", rating: 5, review: "Managing my diabetes was overwhelming until I visited Smile N Shine Clinic. Dr. Mehta's approach to diabetes management has truly transformed my health. My sugar levels are now well controlled." },
+      { name: "Sunita Deshmukh", initials: "SD", rating: 5, review: "The clinic is clean, well-maintained, and the staff is incredibly courteous. I never have to wait more than 10 minutes. Best clinic in Kandivali East!" },
       { name: "Amit Joshi", initials: "AJ", rating: 4, review: "Brought my elderly father here for a health checkup. The staff was very caring and patient with him. The comprehensive checkup package is excellent value for money." },
     ],
   },
@@ -187,7 +187,7 @@ const en = {
 
   // Footer
   footer: {
-    description: "Your trusted neighborhood clinic in Andheri West, providing comprehensive healthcare services with a personal touch.",
+    description: "Your trusted neighborhood clinic in Kandivali East, providing comprehensive healthcare services with a personal touch.",
     quickLinks: "Quick Links",
     servicesTitle: "Services",
     contactTitle: "Contact",

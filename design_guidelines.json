@@ -1,5 +1,5 @@
 {
-  "project_name": "Mumbai Care Clinic Landing Page",
+  "project_name": "Smile N Shine Landing Page",
   "theme": "Light Theme",
   "archetype": "Archetype 1: Organic & Earthy (Adapted for premium medical trust)",
   "design_philosophy": "A premium, accessible, and high-trust healthcare experience. Focuses on clarity, empathy, and speed to conversion. Uses generous whitespace, high-contrast typography, and soft curves to reduce clinical anxiety while maintaining authority.",
@@ -55,7 +55,7 @@
       "layout": "Horizontal banner below hero, subtle background (#F8FAFC), 4-5 key metrics/badges using lucide-react icons (e.g., Award, ShieldCheck, Users, Clock)."
     },
     "about_clinic": {
-      "layout": "Image left (rounded-3xl), Content right. Highlight 'Quality Healthcare for Every Family' in Andheri West."
+      "layout": "Image left (rounded-3xl), Content right. Highlight 'Quality Healthcare for Every Family' in Kandivali East."
     },
     "services_grid": {
       "layout": "CSS Grid, 3 columns (grid-cols-1 md:grid-cols-2 lg:grid-cols-3).",
@@ -79,7 +79,7 @@
       "behavior": "Clicking image opens Framer Motion Lightbox or Shadcn Dialog showing full image."
     },
     "contact_section": {
-      "layout": "2 Columns. Left: Address, Email, Phone, Timings. Right: Google Maps embedded iframe for 'Andheri West, Mumbai'."
+      "layout": "2 Columns. Left: Address, Email, Phone, Timings. Right: Google Maps embedded iframe for 'Kandivali East, Mumbai'."
     },
     "footer": {
       "style": "Dark background (#0F4C81), white text.",

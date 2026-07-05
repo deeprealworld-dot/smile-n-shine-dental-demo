@@ -94,7 +94,7 @@ export default function HeroSection() {
             className="relative"
           >
             <div className="relative rounded-3xl overflow-hidden shadow-[0_20px_60px_rgb(15,76,129,0.15)]">
-              <img src={hero.image} alt="Mumbai Care Clinic" className="w-full h-[320px] sm:h-[400px] lg:h-[480px] object-cover" loading="eager" data-testid="hero-image" />
+              <img src={hero.image} alt="Smile N Shine Clinic" className="w-full h-[320px] sm:h-[400px] lg:h-[480px] object-cover" loading="eager" data-testid="hero-image" />
               <div className="absolute inset-0 bg-gradient-to-t from-clinic-primary/20 to-transparent" />
             </div>
             <motion.div

@@ -1,5 +1,5 @@
 {
-  "summary": "Frontend-only testing of Mumbai Care Clinic landing page. All major sections, interactions, and flows tested on desktop (1920x1080) and mobile (390x844).",
+  "summary": "Frontend-only testing of Smile N Shine Clinic landing page. All major sections, interactions, and flows tested on desktop (1920x1080) and mobile (390x844).",
   "backend_issues": {
     "critical": [],
     "minor": []

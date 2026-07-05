@@ -192,7 +192,7 @@ services: [
     {
       name: "Rajesh Patel",
       rating: 5,
-      review: "Managing my diabetes was overwhelming until I visited Mumbai Care Clinic. Dr. Mehta's approach to diabetes management has truly transformed my health. My sugar levels are now well controlled.",
+      review: "Managing my diabetes was overwhelming until I visited Smile N Shine Clinic. Dr. Mehta's approach to diabetes management has truly transformed my health. My sugar levels are now well controlled.",
       initials: "RP",
     },
     {

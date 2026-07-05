@@ -12,7 +12,7 @@ export default function AboutClinic() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <div className="relative">
-              <img src={about.image} alt="Mumbai Care Clinic" className="rounded-3xl w-full h-[350px] sm:h-[420px] object-cover shadow-[0_20px_60px_rgb(0,0,0,0.08)]" loading="lazy" data-testid="about-image" />
+              <img src={about.image} alt="Smile N Shine Clinic" className="rounded-3xl w-full h-[350px] sm:h-[420px] object-cover shadow-[0_20px_60px_rgb(0,0,0,0.08)]" loading="lazy" data-testid="about-image" />
               <div className="absolute -bottom-6 -right-4 sm:-right-6 bg-clinic-primary rounded-2xl p-5 text-white shadow-lg">
                 <p className="font-heading font-bold text-3xl">12+</p>
                 <p className="font-body text-sm text-white/80">{t.about.yearsOfTrust}</p>
